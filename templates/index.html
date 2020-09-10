@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>favorite quotes</title>
+	<link rel="stylesheet" href="{{url_for('static',filename='bootstrap.min.css')}}">
+</head>
+<body>
+<h1> My list of quote:</h1>
+<ul>
+	{% for r in results %}
+	<div>
+		<h2>{{r.author}}</h2>
+	<li>{{r.quote}}</li></div>
+	
+	{% endfor %}
+</ul>
+</body>
+</html>
+
